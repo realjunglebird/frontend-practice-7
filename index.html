@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Интернет-магазин книг</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --bs-primary: #d21e1e;
+            --primary: #d21e1e;
+            --bs-primary-rgb: 210, 30, 30;
+        }
+
+        .btn-primary {
+            --bs-btn-bg: #d21e1e;
+            --bs-btn-border-color: #d21e1e;
+            --bs-btn-hover-bg: #a01818;
+            --bs-btn-hover-border-color: #a01818;
+            --bs-btn-active-bg: #7a1212;
+            --bs-btn-active-border-color: #7a1212;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 76px;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #d21e1e 0%, #a01818 100%);
+            color: white;
+            padding: 100px 0;
+        }
+
+        .card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .about-img {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #d21e1e !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .logo-text {
+            color: #d21e1e;
+        }
+
+        .cta-button {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+        }
+
+        /* * {
+            border: solid 1px red;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span class="logo-text">Mangateka</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Личный кабинет</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Блог и статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#catalog">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Все новинки - у нас!</h1>
+                    <p class="lead mb-4">Крупнейший выбор манги на русском языке, эксклюзивные фигурки, постеры и мерч по вашим любимым вселенным. Бесплатная доставка от 2000 рублей!</p>
+                    <a href="#catalog" class="btn btn-light btn-lg cta-button fw-bold">В каталог</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                    <h2 class="fw-bold mb-4">
+                        О нашем магазине
+                    </h2>
+                    <p class="lead mb-4">
+                        Mangateka - это специализированный онлайн-магазин манги, гик-сувениров и коллекционных товаров.
+                    </p>
+                    <p>
+                        Мы работаем с 2025 года и за это время собрали одну из самых больших коллекций манги на русском языке. У нас вы найдёте как популярные новинки, так и редкие издания, которые сложно найти в других магазинах.
+                    </p>
+                    <p>
+                        Помимо манги, у нас представлен огромный выбор сувениирной продукции: фигурки, брелки, постеры, футболки, кружки и многое другое с изображением персонажей из ваших любимых вселенных.
+                    </p>
+                    <p>
+                        Мы тщательно отбираем товары и работаем напрямую с издательствами и производителями, чтобы предложить нашим клиентам лучшее качество по доступным ценам.
+                    </p>
+                    <a href="#catalog" class="btn btn-primary btn-lg cta-button fw-bold">В каталог</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold">Категории товаров</h2>
+                    <p class="lead">В нашем магазине вы найдёте всё для фанатов аниме и манги</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ps-3 pe-3 m-0">
+            <!-- Карточка 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-book display-6 text-primary"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Манга и ранобэ</h4>
+                        <p class="card-text">
+                            Более 5000 наименований манги и ранобэ на русском языке. Новинки, классика, эксклюзивые издания и предзаказы на грядущие релизы.
+                        </p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">One Piece</span>
+                            <span class="badge bg-primary me-2">Attack on Titan</span>
+                            <span class="badge bg-primary me-2">Death Note</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-box-seam display-6 text-primary"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Фигурки и статуэтки</h4>
+                        <p class="card-text">
+                            Коллекционные фигурки персонажей из популярных вселенных. Разные размеры и ценовые категории от ведущих производителей.
+                        </p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">Funko Pop</span>
+                            <span class="badge bg-primary me-2">Nendroid</span>
+                            <span class="badge bg-primary me-2">Lego</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-gift display-6 text-primary"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Мерч и сувениры</h4>
+                        <p class="card-text">
+                            Футболки, кружки, брелки, постеры, чехлы и другая сувенирная продукция с вашими любимыми персонажами.
+                        </p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">Одежда</span>
+                            <span class="badge bg-primary me-2">Аксессуары</span>
+                            <span class="badge bg-primary me-2">Для дома</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="fw-bold mb-4">Mangateka</h4>
+                    <p>
+                        Книжный интернет-магазин с крупнейшим выбором манги и сувениров в России. Работаем с 2025 года.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="text-decoration-none text-dark social-icon">
+                            <i class="bi bi-pinterest"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark social-icon">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark social-icon">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark social-icon">
+                            <i class="bi bi-twitch"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark social-icon">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-4">Контакты</h5>
+                    <p>
+                        <i class="bi bi-geo-alt me-2"></i>
+                        г. Москва, ул. Книжная, д. 7
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone me-2"></i>
+                        +7 (123) 456-78-90
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope me-2"></i>
+                        info@mangateka.ru
+                    </p>
+                    <p>
+                        <i class="bi bi-clock me-2"></i>
+                        Пн-Пт: 10:00 - 20:00
+                        Сб-Вс: 11:00 - 19:00
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Разделы магазина</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#home" class="text-decoration-none text-dark">Главная</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-dark">Личный кабинет</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-dark">Блог и статьи</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#home" class="text-decoration-none text-dark">Каталог</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#home" class="text-decoration-none text-dark">О нас</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#home" class="text-decoration-none text-dark">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-5">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2026 Mangateka. Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
